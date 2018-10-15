@@ -18,32 +18,15 @@ set -x PATH "$HOME/bin" $PATH
     # set -x  RUBY_GC_HEAP_GROWTH_MAX_SLOTS 300000
 
 # nodejs - [X]
-    npm config set prefix '~/.npm-global'
-    set -x NPM_GLOBAL "$HOME/.npm-global"
-    set -x PATH "$NPM_GLOBAL/bin" $PATH
-    # yarn
-    set -x PATH $PATH "$HOME/.config/yarn/global/node_modules/.bin"
+    . "$HOME/.config/fish/functions/node.fish"
 
 
 # python - [X]
-    set -x ENVS "$HOME/.virtualenvs/"
-    ## Virtualenv Wrapper - Setup
-    # set -x VENV_WRAPPER "/usr/bin/virtualenvwrapper.sh"
-    # . $VENV_WRAPPER
-    set -x PROJECT_HOME "$HOME/dev"
-    set -x VIRTUALENVWRAPPER_PYTHON "/usr/bin/python3"
-    # run virtualfish
-    eval (python -m virtualfish)
+    . "$HOME/.config/fish/functions/virtualenv.fish"
 
-    # Config `pip' to bail outside a virtualenv by default, see function gpip
-    set -x PIP_REQUIRE_VIRTUALENV 1
-    # Disable `virtualenv' activate script to override prompt
-    set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # go - [x]
-    set -x GOPATH "$HOME/.go"
-    set -x PATH "$GOPATH/bin" $PATH
-    set -x PATH "/usr/local/opt/go/libexec/bin" $PATH
+    . "$HOME/.config/fish/functions/go.fish"
 
 # haskell - [ ]
     # set -x PATH "$HOME/.cabal/bin" $PATH
