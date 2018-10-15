@@ -106,5 +106,14 @@ alias l='ls -CF'
     end
     set -x ALIAS_FILE "$HOME/.config/fish/functions/aliases.fish"
     set -x FISH_CONFIG "$HOME/.config/fish/config.fish"
-    alias ealiases="$EDITOR $ALIAS_FILE; source $ALIAS_FILE;"
-    alias efish="$EDITOR $FISH_CONFIG; source $FISH_CONFIG;"
+    function edit_config
+        # echo $EDITOR $argv
+        eval $EDITOR $argv
+        . $argv
+    end
+    function ealiases
+        edit_config $ALIAS_FILE
+    end
+    function efish
+        edit_config $FISH_CONFIG
+    end

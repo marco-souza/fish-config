@@ -55,7 +55,7 @@ set -x PATH "$HOME/bin" $PATH
     set -x PATH "./bin" $PATH
 
 # editor
-    set -x EDITOR "nvim"
+    set -x EDITOR "vim"
 
 # LESS with colors
     # from http://blog.0x1fff.com/2009/11/linux-tip-color-enabled-pager-less.html
