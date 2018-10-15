@@ -1,6 +1,7 @@
-all: apply
+all: deps apply
 
 deps:
+	git submodule update
 	sudo pip install virtualfish
 
 apply:
