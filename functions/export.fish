@@ -34,8 +34,8 @@ set -x PATH "$HOME/bin" $PATH
 # flutter - [ ]
     # set -x PATH "$HOME/project/flutter/bin" $PATH
 
-# respect local bins
-    set -x PATH "./bin" $PATH
+# respect local bins - [ ]
+    # set -x PATH "./bin" $PATH
 
 # editor
     set -x EDITOR "vim"
