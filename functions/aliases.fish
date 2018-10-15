@@ -32,6 +32,7 @@ alias l='ls -CF'
 
 # git related shortcut
     alias undopush="git push -f origin HEAD^:master"
+    alias gcl="git clone"
     alias gd="git diff"
     alias gdc="git diff --cached"
     alias ga="git add"
