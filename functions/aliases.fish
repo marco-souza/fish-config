@@ -13,17 +13,18 @@ alias l='ls -CF'
 ################################
 ###  File ShortCut
 ################################
-alias D="cd ~/Downloads"
-alias d="cd ~/Dropbox"
-alias p="cd ~/project"
-alias g="git"
-alias v="mvim -v"
-alias vim="mvim -v"
-alias s="sublime"
-alias e="emacsclient -t"
-alias ec="emacsclient -c"
-alias sbp="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/"
-alias sbu="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User"
+    alias D="cd ~/Downloads"
+    # alias d="cd ~/Dropbox"
+    # alias p="cd ~/project"
+    # alias e="emacsclient -t"
+    # alias ec="emacsclient -c"
+    # alias sbp="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/"
+    # alias sbu="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User"
+    alias g="git"
+    alias v="$EDITOR -v"
+    alias vim="$EDITOR -v"
+    alias s="sublime"
+    alias ci="code-insiders"
 
 ################################
 ###  Program ShortCut
