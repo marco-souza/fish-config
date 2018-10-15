@@ -5,7 +5,7 @@ set -x LC_CTYPE pt_BR.UTF-8
 # add homebrew to the beginning of PATH
 set -x PATH "/usr/local/bin" $PATH
 set -x PATH "/usr/local/sbin" $PATH
-set -x PATH "$HOME/bin" $PATH
+# set -x PATH "$HOME/bin" $PATH
 
 # ruby - [ ]
     # # setup rbenv (from https://gist.github.com/2937920)
@@ -34,8 +34,8 @@ set -x PATH "$HOME/bin" $PATH
 # flutter - [ ]
     # set -x PATH "$HOME/project/flutter/bin" $PATH
 
-# respect local bins - [ ]
-    # set -x PATH "./bin" $PATH
+# respect local bins
+    set -x PATH "./bin" $PATH
 
 # editor
     set -x EDITOR "vim"
