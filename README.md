@@ -34,3 +34,4 @@ Cheers :smile:
 
 - Clean and move utils
 - Improve how to show `cwd`
+- show date on shell
