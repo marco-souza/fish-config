@@ -28,10 +28,13 @@ set -x PATH "$HOME/bin" $PATH
 # python - [X]
     set -x ENVS "$HOME/.virtualenvs/"
     ## Virtualenv Wrapper - Setup
-    set -x VENV_WRAPPER "/usr/local/bin/virtualenvwrapper.sh"
+    # set -x VENV_WRAPPER "/usr/bin/virtualenvwrapper.sh"
+    # . $VENV_WRAPPER
     set -x PROJECT_HOME "$HOME/dev"
     set -x VIRTUALENVWRAPPER_PYTHON "/usr/bin/python3"
-    . $VENV_WRAPPER
+    # run virtualfish
+    eval (python -m virtualfish)
+
     # Config `pip' to bail outside a virtualenv by default, see function gpip
     set -x PIP_REQUIRE_VIRTUALENV 1
     # Disable `virtualenv' activate script to override prompt
