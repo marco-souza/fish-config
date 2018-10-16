@@ -23,7 +23,7 @@ set -g VIRTUALFISH_COMPAT_ALIASES yes
 
 
 # python - [X]
-    . "$HOME/.config/fish/functions/virtualenv.fish"
+    . "$HOME/.config/fish/functions/virtualfish.fish"
 
 
 # go - [x]
@@ -35,8 +35,8 @@ set -g VIRTUALFISH_COMPAT_ALIASES yes
 # flutter - [ ]
     # set -x PATH "$HOME/project/flutter/bin" $PATH
 
-# respect local bins
-    set -x PATH "./bin" $PATH
+# respect local bins - [ ]
+    # set -x PATH "./bin" $PATH
 
 # editor
     set -x EDITOR "vim"

@@ -5,9 +5,13 @@
 
 # virtualenv support in fish
 set -g VIRTUALFISH_COMPAT_ALIASES
-. "$HOME/.config/fish/plugins/virtualfish/virtual.fish"
-. "$HOME/.config/fish/plugins/virtualfish/auto_activation.fish"
-. "$HOME/.config/fish/plugins/virtualfish/global_requirements.fish"
+. "$HOME/.config/fish/plugins/virtualfish/virtualfish/virtual.fish"
+. "$HOME/.config/fish/plugins/virtualfish/virtualfish/compat_aliases.fish"
+. "$HOME/.config/fish/plugins/virtualfish/virtualfish/environment.fish"
+. "$HOME/.config/fish/plugins/virtualfish/virtualfish/auto_activation.fish"
+. "$HOME/.config/fish/plugins/virtualfish/virtualfish/global_requirements.fish"
+. "$HOME/.config/fish/plugins/virtualfish/virtualfish/projects.fish"
+. "$HOME/.config/fish/plugins/virtualfish/virtualfish/update_python.fish"
 
 # fenv
 set fish_function_path $fish_function_path "$HOME/.config/fish/plugins/plugin-foreign-env/functions"
