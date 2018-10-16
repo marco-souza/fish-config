@@ -1,6 +1,7 @@
 [submodule "plugins/virtualfish"]
 	path = plugins/virtualfish
-	url = git@github.com:adambrenecki/virtualfish.git
+	url = git@github.com:marco-souza/virtualfish.git
+	branch = master
 [submodule "plugins/nvm-wrapper"]
 	path = plugins/nvm-wrapper
 	url = git@github.com:passcod/nvm-fish-wrapper.git
