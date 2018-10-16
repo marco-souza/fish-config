@@ -4,7 +4,6 @@ set -x VIRTUALFISH_HOME $ENVS
 
 # setup projects paths
 set -x PROJECT_HOME "$HOME/dev"
-set -x VIRTUALFISH_HOME $PROJECT_HOME
 
 # setup default python
 set -x VIRTUALFISH_DEFAULT_PYTHON "/usr/bin/python3"
