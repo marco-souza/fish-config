@@ -111,6 +111,12 @@ alias l='ls -CF'
         eval "pactl -- set-sink-volume 0 $argv%"
     end
     set -x VOLUME 100
+    function v+
+        vol +10
+    end
+    function v-
+        vol -10
+    end
     function tvol
         if test $VOLUME -eq 100
             set -x VOLUME 150
