@@ -98,13 +98,28 @@ alias l='ls -CF'
     alias dkps="docker ps"
 
 # utils
+    # kill
     function tid
         # conda_env=${1:-workspace}
-        ps -ax | grep -i $1 | grep -v 0:00.00 | awk '{ print $1 }' | uniq
+        ps -ax | grep $argv | grep -v 0:00.00 | awk '{ print $1 }' | uniq
     end
     function ak
-        kill -9 (tid $1)
+        kill -9 (tid $argv)
     end
+    # volume
+    function vol
+        eval "pactl -- set-sink-volume 0 $argv%"
+    end
+    set -x VOLUME 100
+    function tvol
+        if test $VOLUME -eq 100
+            set -x VOLUME 150
+        else
+            set -x VOLUME 100
+        end
+        vol $VOLUME
+    end
+    # edit
     set -x ALIAS_FILE "$HOME/.config/fish/functions/aliases.fish"
     set -x FISH_CONFIG "$HOME/.config/fish/config.fish"
     function edit_config
