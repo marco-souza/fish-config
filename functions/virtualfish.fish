@@ -13,4 +13,4 @@ set -x PIP_REQUIRE_VIRTUALENV 1
 # Disable `virtualenv' activate script to override prompt
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
-eval (python -m virtualfish compat_aliases auto_activation global_requirements projects)
+# eval (python -m virtualfish compat_aliases auto_activation global_requirements projects)
