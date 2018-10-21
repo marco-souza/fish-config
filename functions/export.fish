@@ -4,7 +4,7 @@ set -x LC_CTYPE pt_BR.UTF-8
 
 # add homebrew to the beginning of PATH
 set -x PATH "/usr/local/bin" $PATH
-set -x PATH "/usr/local/sbin" $PATH
+#set -x PATH "/usr/local/sbin" $PATH
 set -g VIRTUALFISH_COMPAT_ALIASES yes
 
 # nodejs - [X]

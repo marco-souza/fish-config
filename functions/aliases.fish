@@ -47,10 +47,10 @@ alias l='ls -CF'
     function tree6; tree --dirsfirst -ChFLQ 6 $argv; end
 
 # Package Manager
-    alias y="yaourt --noconfirm"
-    alias i="yaourt -Sy --noconfirm"
-    alias u="yaourt -Syu --aur --noconfirm; and npm i -g npm yarn"
-    alias r="yaourt -Rs --noconfirm"
+    alias i="brew install"
+    alias ic="brew install --cask"
+    alias u="brew upgrade; and brew cask upgrade"
+    alias r="brew uninstall"
 
 # npm Aliases
     alias ni="npm i -g"
