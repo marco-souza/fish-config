@@ -6,10 +6,10 @@ set -x VIRTUALFISH_HOME $ENVS
 set -x PROJECT_HOME "$HOME/dev"
 
 # setup default python
-set -x VIRTUALFISH_DEFAULT_PYTHON "/usr/bin/python3"
+set -x VIRTUALFISH_DEFAULT_PYTHON "/usr/local/bin/python3"
 
 # Config `pip' to bail outside a virtualenv by default, see function gpip
-set -x PIP_REQUIRE_VIRTUALENV 1
+set -x PIP_REQUIRE_VIRTUALENV 0
 # Disable `virtualenv' activate script to override prompt
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 

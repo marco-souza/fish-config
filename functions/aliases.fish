@@ -69,10 +69,9 @@ alias l='ls -CF'
     function tree6; tree --dirsfirst -ChFLQ 6 $argv; end
 
 # Package Manager
-    alias i="brew install"
-    alias ic="brew install --cask"
-    alias u="brew upgrade; and brew cask upgrade"
-    alias r="brew uninstall"
+    alias i="crew install"
+    alias u="crew upgrade"
+    alias r="crew uninstall"
 
 # npm Aliases
     alias ni="npm i -g"
