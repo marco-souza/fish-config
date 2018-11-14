@@ -71,7 +71,7 @@ alias l='ls -CF'
 # Package Manager
     alias y="yaourt --noconfirm"
     alias i="yaourt -Sy --noconfirm"
-    alias u="yaourt -Syu --aur --noconfirm"
+    alias u="yaourt -Syu --aur --noconfirm; and npm i -g npm yarn"
     alias r="yaourt -Rs --noconfirm"
 
 # npm Aliases
