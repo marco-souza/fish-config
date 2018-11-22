@@ -139,3 +139,11 @@ alias l='ls -CF'
     function efish
         edit_config $FISH_CONFIG
     end
+
+    function dir_name
+        echo (basename $PWD)
+    end
+
+    function fi
+        echo ><>
+    end
