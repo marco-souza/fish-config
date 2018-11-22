@@ -145,5 +145,5 @@ alias l='ls -CF'
     end
 
     function fi
-        echo ><>
+        echo "><>"
     end
