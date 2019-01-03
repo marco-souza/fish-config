@@ -3,8 +3,8 @@ all: deps apply
 deps:
 	git submodule update
 	sudo pip install virtualfish
-	curl -L https://get.oh-my.fish | fish
 
 apply:
 	cp -r ./* ~/.config/fish/
+	curl -L https://get.oh-my.fish | fish
 	omf install batman
