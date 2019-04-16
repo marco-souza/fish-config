@@ -6,7 +6,9 @@ deps:
 
 apply:
 	cp -r ./* ~/.config/fish/
-	# install oh my fish
+	OMF_PATH=$HOME/.local/share/omf
+ifeq ("$(wildcard ${OMF_PATH})", "")
 	curl -L https://get.oh-my.fish | fish
-	omf install batman
-	omf install https://github.com/jhillyerd/plugin-git
+endif
+	fish -c "omf install batman"
+	fish -c "omf install https://github.com/jhillyerd/plugin-git"
