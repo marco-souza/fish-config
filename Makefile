@@ -12,3 +12,4 @@ ifeq ("$(wildcard ${OMF_PATH})", "")
 endif
 	fish -c "omf install batman"
 	fish -c "omf install https://github.com/jhillyerd/plugin-git"
+	fish -c "omf install await"

@@ -111,6 +111,7 @@ alias l='ls -CF'
         eval $EDITOR $argv
         . $argv
     end
+
     function ealiases
         edit_config $ALIAS_FILE
     end
@@ -124,4 +125,8 @@ alias l='ls -CF'
 
     function fi
         echo "><>"
+    end
+
+    function dd
+        /usr/bin/dd $argv & await "building disk..."
     end
