@@ -77,56 +77,42 @@ alias l='ls -CF'
 
 # utils
     # kill
-    function tid
-        # conda_env=${1:-workspace}
-        ps -ax | grep $argv | grep -v 0:00.00 | awk '{ print $1 }' | uniq
-    end
-    function ak
-        kill -9 (tid $argv)
-    end
-    # volume
-    function vol
-        eval "pactl -- set-sink-volume 0 $argv%"
-    end
-    set -x VOLUME 100
-    function v+
-        vol +10
-    end
-    function v-
-        vol -10
-    end
-    function tvol
-        if test $VOLUME -eq 100
-            set -x VOLUME 150
-        else
-            set -x VOLUME 100
+        function tid
+            # conda_env=${1:-workspace}
+            ps -ax | grep $argv | grep -v 0:00.00 | awk '{ print $1 }' | uniq
         end
-        vol $VOLUME
-    end
-    # edit
-    set -x ALIAS_FILE "$HOME/.config/fish/functions/aliases.fish"
-    set -x FISH_CONFIG "$HOME/.config/fish/config.fish"
-    function edit_config
-        # echo $EDITOR $argv
-        eval $EDITOR $argv
-        . $argv
-    end
+        function ak
+            kill -9 (tid $argv)
+        end
 
-    function ealiases
-        edit_config $ALIAS_FILE
-    end
-    function efish
-        edit_config $FISH_CONFIG
-    end
+    # volume
+        function vol
+            eval "pactl -- set-sink-volume 0 $argv%"
+        end
 
-    function dir_name
-        echo (basename $PWD)
-    end
+        set -x VOLUME 100
+        function v+
+            vol +10
+        end
 
-    function fi
-        echo "><>"
-    end
+        function v-
+            vol -10
+        end
 
-    function dd
-        /usr/bin/dd $argv & await "building disk..."
-    end
+        function tvol
+            if test $VOLUME -eq 100
+                set -x VOLUME 150
+            else
+                set -x VOLUME 100
+            end
+            vol $VOLUME
+        end
+
+    # system utils
+        function dir_name
+            echo (basename $PWD)
+        end
+
+        function dd
+            /usr/bin/dd $argv & await "building disk..."
+        end
