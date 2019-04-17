@@ -74,6 +74,10 @@ alias l='ls -CF'
     alias dkc="docker-compose"
     alias dkm="docker-machine"
     alias dkps="docker ps"
+# vscodium aliases
+    alias c="vscodium"
+    alias ci="vscodium --install-extension"
+    alias cr="vscodium --uninstall-extension"
 
 # utils
     # kill
