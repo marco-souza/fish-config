@@ -72,8 +72,12 @@ alias l='ls -CF'
     alias dk="docker"
     alias dkr="docker run"
     alias dkc="docker-compose"
-    alias dkm="docker-machine"
-    alias dkps="docker ps"
+    alias dks="docker stack"
+    alias dkps="docker container ps"
+    alias ctop="docker rm ctop; docker run --rm -ti \
+        --name=ctop \
+        -v /var/run/docker.sock:/var/run/docker.sock \
+        quay.io/vektorlab/ctop:latest"
 # vscodium aliases
     alias code="vscodium"
     alias codei="vscodium --install-extension"
