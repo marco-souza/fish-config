@@ -121,3 +121,9 @@ end
 function sudobangbang --on-event fish_postexec
     abbr !! sudo $argv[1]
 end
+
+ # enable && and ||
+function fish_user_key_bindings
+  bind "&&" 'commandline -i "; and"'
+  bind "||" 'commandline -i "; or"'
+end
