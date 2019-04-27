@@ -49,7 +49,7 @@ alias l='ls -CF'
 # Package Manager
     alias s="sudo apt search"
     alias i="sudo apt install -y"
-    alias u="sudo apt update; apt upgrade -y; apt autoremove"
+    alias u="sudo apt update; sudo apt upgrade -y; sudo apt autoremove"
     alias r="sudo apt purge"
 
 # npm Aliases
