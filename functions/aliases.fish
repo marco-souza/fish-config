@@ -47,10 +47,10 @@ alias l='ls -CF'
     function tree6; tree --dirsfirst -ChFLQ 6 $argv; end
 
 # Package Manager
-    alias s="apt search"
-    alias i="apt install -y"
-    alias u="apt update; apt upgrade -y; apt autoremove"
-    alias r="apt purge"
+    alias s="sudo apt search"
+    alias i="sudo apt install -y"
+    alias u="sudo apt update; apt upgrade -y; apt autoremove"
+    alias r="sudo apt purge"
 
 # npm Aliases
     alias ni="npm i -g"
