@@ -1,7 +1,0 @@
-[submodule "plugins/virtualfish"]
-	path = plugins/virtualfish
-	url = git@github.com:marco-souza/virtualfish.git
-	branch = master
-[submodule "plugins/plugin-foreign-env"]
-	path = plugins/plugin-foreign-env
-	url = git@github.com:oh-my-fish/plugin-foreign-env.git
