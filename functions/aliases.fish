@@ -15,7 +15,7 @@ alias l='ls -CF'
 ################################
     alias D="cd ~/Downloads"
     # alias d="cd ~/Dropbox"
-    # alias p="cd ~/project"
+    alias dev="cd ~/dev"
     # alias e="emacsclient -t"
     # alias ec="emacsclient -c"
     # alias sbp="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/"
@@ -47,10 +47,10 @@ alias l='ls -CF'
     function tree6; tree --dirsfirst -ChFLQ 6 $argv; end
 
 # Package Manager
-    alias i="brew install"
-    alias ic="brew install --cask"
-    alias u="brew upgrade; and brew cask upgrade"
-    alias r="brew uninstall"
+    alias y="yaourt --noconfirm"
+    alias i="yaourt -Sy --noconfirm"
+    alias u="yaourt -Syu --aur --noconfirm; and npm i -g npm yarn"
+    alias r="yaourt -Rs --noconfirm"
 
 # npm Aliases
     alias ni="npm i -g"
