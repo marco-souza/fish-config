@@ -47,10 +47,10 @@ alias l='ls -CF'
     function tree6; tree --dirsfirst -ChFLQ 6 $argv; end
 
 # Package Manager
-    alias y="yaourt --noconfirm"
-    alias i="yaourt -Sy --noconfirm"
-    alias u="yaourt -Syu --aur --noconfirm; and npm i -g npm yarn"
-    alias r="yaourt -Rs --noconfirm"
+    alias s="apt search"
+    alias i="apt install -y"
+    alias u="apt update && apt upgrade -y && apt autoremove"
+    alias r="apt purge"
 
 # npm Aliases
     alias ni="npm i -g"
