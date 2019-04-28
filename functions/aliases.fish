@@ -47,10 +47,10 @@ alias l='ls -CF'
     function tree6; tree --dirsfirst -ChFLQ 6 $argv; end
 
 # Package Manager
-    alias y="yaourt --noconfirm"
-    alias i="yaourt -Sy --noconfirm"
-    alias u="yaourt -Syu --aur --noconfirm; and npm i -g npm yarn"
-    alias r="yaourt -Rs --noconfirm"
+    alias i="brew install"
+    alias ic="brew cask install"
+    alias u="brew upgrade; and brew cask upgrade"
+    alias r="brew remove"
 
 # npm Aliases
     alias ni="npm i -g"
@@ -79,7 +79,7 @@ alias l='ls -CF'
         -v /var/run/docker.sock:/var/run/docker.sock \
         quay.io/vektorlab/ctop:latest"
 # vscodium aliases
-    alias code="vscodium"
+    alias code="open -a VSCodium"
     alias codei="vscodium --install-extension"
     alias coder="vscodium --uninstall-extension"
 
